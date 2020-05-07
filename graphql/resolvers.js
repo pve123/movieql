@@ -1,8 +1,13 @@
-import { getMovies } from "./db";
+
+
+const people = {
+    name : "Lee Ho Sung",
+    age : 25
+}
 
 const resolvers = {
     Query: {
-      movies: (_, { rating, limit }) => getMovies(limit, rating)
+      person : () => people
     }
   };
 

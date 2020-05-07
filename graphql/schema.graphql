@@ -1,11 +1,9 @@
-type Movie {
-    id : Int!
-    title : String!
-    rating : Float!
-    summary : String!
+type people {
+    name : String!
+    age : Int!
 }
 
 
 type Query {
-    movies : [Movie]!
+    person : people!
 }
