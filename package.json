@@ -1,0 +1,23 @@
+{
+  "name": "Movie",
+  "version": "1.0.0",
+  "description": "Movie API with Graphql",
+  "main": "index.js",
+  "repository": "https://github.com/pve123/movieql",
+  "author": "pve123",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "graphql-yoga": "^1.18.3",
+    "node": "^14.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  }
+}
