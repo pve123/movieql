@@ -1,15 +1,13 @@
-
-
-const people = {
-    name : "Lee Ho Sung",
-    age : 25
-}
+import {getPeople,getPerson, getMovies} from "./db"
 
 const resolvers = {
     Query: {
-      person : () => people
+      people : () => getPeople(),
+      person : (_,{id}) => getPerson(id),
+      movies : (_,{limit,rating}) => getMovies(limit,rating)
+
     }
-  };
+};
 
 
 export default resolvers;

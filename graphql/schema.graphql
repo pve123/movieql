@@ -1,9 +1,20 @@
-type people {
+type Person {
+    id : Int!
     name : String!
     age : Int!
 }
 
+type Movie{
+    id : Int!
+    title : String!
+    rating : Float!
+    summary : String!
+    language : String!
+}
+
 
 type Query {
-    person : people!
+    people : [Person]!
+    person(id : Int!) : Person
+    movies(limit : Int, rating : Float) : [Movie]
 }
